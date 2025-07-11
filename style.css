@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* 変数定義 */
 :root {
-  --text-color: #2e8b57; /* シーグリーン - やや深めの緑で読みやすく */
-  --bg-color: #e0ffe0;   /* パステルグリーン - 非常に薄い緑で背景に最適 */
-  --article-color: #3cb371; /* ミディアムシーグリーン - 記事本文に合う落ち着いた緑 */
-  --article-bg-color: #f0fff0; /* さらに薄いミントグリーン - 記事の背景をより明るく */
+  --text-color: #2e8b57; /* シーグリーン */
+  --bg-color: #e0ffe0;   /* パステルグリーン  */
+  --article-color: #3cb371; /* ミディアムシーグリーン */
+  --article-bg-color: #f0fff0; /* さらに薄いミントグリーン */
   --header-text-color: var(--bg-color); /* ヘッダーの文字色を背景と同じ明るい緑に */
   --header-bg-color: var(--text-color); /* ヘッダーの背景色を深めの緑に */
   --main-blur-color: rgba(46, 139, 87, 0.15); /* シーグリーンに透明度を加えたぼかし色 */
