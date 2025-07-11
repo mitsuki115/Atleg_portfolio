@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 変数定義 */
 :root {
-  --text-color: #2F4F4F; /* 濃い緑（ダークスレートグレー */
+  --text-color: #2F4F4F; /* 濃い緑（ダークスレートグレー） */
   --bg-color: #F0FFF0;   /* 薄い緑（ハニーデュー） */
   --article-color: #3CB371; /* 文字用の濃い緑（ミディアムシーグリーン） */
   --article-bg-color: #F5FFFA; /* さらに薄い緑（ミントクリーム） */
@@ -376,3 +376,254 @@ footer.with-shadow {
   color: var(--article-color);
   display: block;
   margin-top: 0.2em;
+  font-size: 0.95rem;
+}
+
+.sns-links {
+  margin: 0 3rem auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0.4rem;
+  /* より詰める */
+}
+
+.sns-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--grost-orange);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.75rem;
+  background-color: transparent;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.sns-link:hover {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.sns-link img {
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+h1 {
+  display: block;
+  width: 100vw;
+  max-width: 1050px;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 1000;
+  color: var(--text-color);
+  padding: 0.5rem 0;
+  margin: 2rem auto;
+  margin-top: 2.5em;
+  background: linear-gradient(to right, #F5FFFA, #F0FFF0); /* 薄い緑のグラデーション */
+  border-top: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1050px) {
+  h1 {
+    font-size: 2em;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+  }
+}
+.wavey-light {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--grost-orange);
+  overflow: hidden;
+  padding: auto;
+  top: -0.1em;
+}
+.wavey-light::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 100%;
+  height: 1.2em;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.6) 50%, transparent 100%);
+  transform: skewX(-20deg) translateY(-50%);
+  pointer-events: none;
+}
+.wavey-light:hover::after {
+  animation: shine 0.6s ease-out forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+hr {
+  height: 4px;
+  border: none;
+  background: linear-gradient(270deg, var(--grost-orange), var(--text-color), var(--grost-orange));
+  background-size: 400% 100%;
+  transition: all 0.3s ease-in-out;
+  background-position: 0% 50%;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+hr:hover {
+  animation: gradientMove 3s linear infinite;
+}
+
+.article-container {
+  width: 90vw;
+  max-width: 1000px;
+  /* 横幅広め */
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: var(--article-bg-color);
+  border: 2px solid var(--grost-orange);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  line-height: 1.7;
+  font-size: 1rem;
+  color: var(--article-color);
+}
+.article-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* 追加のCSSはここから下に */
+/* 追加のCSSはここから上に */
+/* スマホ用スタイルシート */
+@media screen and (max-aspect-ratio: 9/16) {
+  #err-size {
+    display: flex;
+  }
+  .slide-menu {
+    width: 70vw;
+  }
+  .menu-button {
+    width: 48px;
+    /* 増加 */
+    height: 48px;
+    /* 増加 */
+  }
+  .menu-button::before,
+  .menu-button::after,
+  .menu-button span {
+    width: 36px;
+    /* 増加 */
+    height: 4px;
+    /* 増加 */
+  }
+  .menu-button::before {
+    top: 12px;
+    /* 増加 */
+  }
+  .menu-button::after {
+    bottom: 12px;
+    /* 増加 */
+  }
+  .profile-container {
+    flex-direction: column;
+    /* ← スマホでは縦並び */
+  }
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-info {
+    text-align: center;
+  }
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+#err-size {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #111 0%, #222 100%);
+  color: white;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.err-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--grost-orange, #66CDAA); /* 緑系に合わせる */
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(102, 205, 170, 0.3); /* 緑系のシャドウ */
+  animation: fadeIn 0.6s ease-in-out;
+  max-width: 96vw;
+  max-height: 96vh;
+  overflow-y: scroll;
+}
+.err-box::-webkit-scrollbar {
+  display: none;
+}
+
+.err-box h1 {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  width: auto;
+  color: var(--grost-orange, #66CDAA); /* 緑系に合わせる */
+  border: 1px solid var(--text-color);
+  border-radius: 15px;
+}
+
+.err-box p {
+  font-size: 0.5rem;
+  opacity: 0.8;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* 小さい画面だけで表示 */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 20px;
+  }
+  #err-size {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */
