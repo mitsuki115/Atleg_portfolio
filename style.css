@@ -7,8 +7,8 @@
   --article-bg-color: #e6e6fa;     /* さらに薄い青 */
   --header-text-color: var(--bg-color);
   --header-bg-color: var(--text-color);
-  --main-blur-color: rgba(37, 116, 169, 0.15); /* 青系のぼかし */
-  --grost-orange: #7ecbff;         /* アクセントの明るい青 */
+  --main-blur-color: rgba(#dda0dd, 0.15); /* 青系のぼかし */
+  --grost-orange: #dda0dd;         /* アクセントの明るい青 */
   /* フォントサイズはそのまま */
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
