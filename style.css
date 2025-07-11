@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /* 変数定義 */
 :root {
-  --text-color: #2F4F4F; /* 濃い緑（ダークスレートグレー） */
-  --bg-color: #F0FFF0;   /* 薄い緑（ハニーデュー） */
-  --article-color: #3CB371; /* 文字用の濃い緑（ミディアムシーグリーン） */
-  --article-bg-color: #F5FFFA; /* さらに薄い緑（ミントクリーム） */
+  --text-color: #4b0082; /* 濃い紫（インディゴ） */
+  --bg-color: #e6e6fa;   /* 薄い紫（ラベンダー） */
+  --article-color: #6a5acd; /* 文字用の濃い紫（スレートブルー） */
+  --article-bg-color: #f0e6fa; /* さらに薄い紫（ライトラベンダー） */
   --header-text-color: var(--bg-color);
   --header-bg-color: var(--text-color);
-  --main-blur-color: rgba(47, 79, 79, 0.15); /* 緑系のぼかし */
-  --grost-orange: #66CDAA; /* アクセントの明るい緑（ミディアムアクアマリン） */
+  --main-blur-color: rgba(75, 0, 130, 0.15); /* 紫系のぼかし */
+  --grost-orange: #8a2be2; /* アクセントの明るい紫（ブルーバイオレット） */
   /* フォントサイズはそのまま */
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
@@ -295,7 +295,7 @@ footer.with-shadow {
   /* 中央寄せ */
   padding: 2rem 1rem;
   border: 3px solid var(--grost-orange);
-  /* 緑系に合わせる */
+  /* 紫系に合わせる */
   border-radius: 12px;
   background-color: var(--article-bg-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -429,7 +429,7 @@ h1 {
   padding: 0.5rem 0;
   margin: 2rem auto;
   margin-top: 2.5em;
-  background: linear-gradient(to right, #F5FFFA, #F0FFF0); /* 薄い緑のグラデーション */
+  background: linear-gradient(to right, #f8f0fa, #edd5fa); /* 薄い紫のグラデーション */
   border-top: 1px solid var(--text-color);
   border-bottom: 1px solid var(--text-color);
   letter-spacing: 0.03em;
@@ -579,11 +579,11 @@ hr:hover {
 
 .err-box {
   background-color: rgba(255, 255, 255, 0.05);
-  border: 2px solid var(--grost-orange, #66CDAA); /* 緑系に合わせる */
+  border: 2px solid var(--grost-orange, #8a2be2); /* 紫系に合わせる */
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 0 20px rgba(102, 205, 170, 0.3); /* 緑系のシャドウ */
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.3); /* 紫系のシャドウ */
   animation: fadeIn 0.6s ease-in-out;
   max-width: 96vw;
   max-height: 96vh;
@@ -597,7 +597,7 @@ hr:hover {
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
   width: auto;
-  color: var(--grost-orange, #66CDAA); /* 緑系に合わせる */
+  color: var(--grost-orange, #8a2be2); /* 紫系に合わせる */
   border: 1px solid var(--text-color);
   border-radius: 15px;
 }
