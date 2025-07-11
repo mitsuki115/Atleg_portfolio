@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 変数定義 */
 :root {
-  --text-color: #2F4F4F; /* 濃い緑（ダークスレートグレー） */
+  --text-color: #2F4F4F; /* 濃い緑（ダークスレートグレー */
   --bg-color: #F0FFF0;   /* 薄い緑（ハニーデュー） */
   --article-color: #3CB371; /* 文字用の濃い緑（ミディアムシーグリーン） */
   --article-bg-color: #F5FFFA; /* さらに薄い緑（ミントクリーム） */
